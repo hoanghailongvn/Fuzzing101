@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=/home/kali/Documents/Fuzzing101/Exercise1/my_Solutions/install-clang/bin/pdftotext
+AFL_CUSTOM_INFO_PROGRAM_ARGV=@@ /home/kali/Documents/Fuzzing101/Exercise1/my_Solutions/output
+AFL_CUSTOM_INFO_OUT=/home/kali/Documents/Fuzzing101/Exercise1/my_Solutions/out/default
+# command line:
+'/home/kali/AFLplusplus/afl-fuzz' '-i' '/home/kali/Documents/Fuzzing101/Exercise1/my_Solutions/pdf_examples' '-o' '/home/kali/Documents/Fuzzing101/Exercise1/my_Solutions/out' '-s' '123' '--' '/home/kali/Documents/Fuzzing101/Exercise1/my_Solutions/install-clang/bin/pdftotext' '@@' '/home/kali/Documents/Fuzzing101/Exercise1/my_Solutions/output'
